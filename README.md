@@ -6,13 +6,13 @@
 ## Installation
 
 ```sh
-$ npm install --save yodlee
+$ npm install --save yodlee.js
 ```
 
 ## Usage
 
 ```js
-var yodlee = require('yodlee');
+var yodlee = require('yodlee.js');
 ```
 
 
@@ -28,7 +28,7 @@ yodlee.use({
 ```
 
 ## OAuth Requests
-Yodlee uses the standard oauth authentication flow in order to allow apps to act on a user's behalf. The API provides a convenience method to help you authenticate your users. 
+Yodlee uses the standard oauth authentication flow in order to allow apps to act on a user's behalf. The API provides a convenience method to help you authenticate your users.
 
 ```js
 yodlee.getAccessToken({
@@ -36,7 +36,7 @@ yodlee.getAccessToken({
     password: 'sbMemsomeuser#123'
 })
   .then(function(accessToken) {})
-  .catch(function(error) {}); 
+  .catch(function(error) {});
 
 ```
 
@@ -48,7 +48,7 @@ Returns the information related to the specified accounts aggregated by the User
 ```js
 yodlee.getAccounts(accessToken)
   .then(function(response) {})
-  .catch(function(error) {}); 
+  .catch(function(error) {});
 
 ```
 
@@ -66,7 +66,7 @@ yodlee.getTransactions(accessToken, {
   ignoreUserInput: true
 })
   .then(function(response) {})
-  .catch(function(error) {}); 
+  .catch(function(error) {});
 
 ```
 
@@ -81,14 +81,10 @@ Add documentation for every API change. Feel free to send corrections or better 
 ##### Pull Requests
 Send _fixes_ PR on the `master` branch.
 
-## License
-MIT © [Craig Richardson](https://www.linkedin.com/in/craigalanrichardson)
 
-[npm-image]: https://badge.fury.io/js/yodlee.svg
-[npm-url]: https://npmjs.org/package/yodlee
-[travis-image]: https://travis-ci.org/craigrich/yodlee.svg?branch=master
-[travis-url]: https://travis-ci.org/craigrich/yodlee
-[daviddm-image]: https://david-dm.org/craigrich/yodlee.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/craigrich/yodlee
-[coverage-image]: https://coveralls.io/repos/craigrich/yodlee/badge.svg?branch=master
-[coverage-url]: https://coveralls.io/r/craigrich/yodlee?branch=master
+## Credits
+This application uses Open Source components. You can find the source code of their open source projects along with license information below. We acknowledge and are grateful to these developers for their contributions to open source.
+
+Project: Yodlee https://github.com/craigrich/yodlee
+Copyright Craig Richardson
+License (MIT)
